@@ -13,9 +13,7 @@ const user = require('./controller/user')
 const productOption = require('./controller/productOption')
 const {upload} = require('./middleware/upload')
 const app = express()
-app.use(cors({
-    origin: ['http://localhost:3000/', 'https://main.d3m3w4y9wnjq6r.amplifyapp.com/']
-}));
+app.use(cors());
 //var upload = multer()
 
 // const appBundle = fs.readFileSync("../frontend/public/index.html", "utf8");
